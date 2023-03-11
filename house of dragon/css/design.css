@@ -1,0 +1,369 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #0a1618;
+  scroll-behavior: smooth;
+}
+/* start image page */
+.main-page {
+  height: 500px;
+  background: url(house\ of\ dragon.jpg) no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+.main-page .nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.main-page .nav .logo a {
+  display: block;
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+  margin: 20px 40px;
+}
+.main-page .nav .search-box input {
+  border-radius: 15px;
+  height: 30px;
+  padding: 5px 7px;
+  font-size: 15px;
+  color: rgb(245, 243, 243);
+  background-color: rgb(28, 28, 28);
+  opacity: 0.7;
+  margin: 20px 50px;
+  transition: 0.5 ease;
+}
+.main-page .nav .search-box input:hover {
+  opacity: 0.9;
+}
+.main-page .film-name {
+  margin: 200px 100px;
+}
+.main-page .film-name h1 {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 600;
+  font-style: italic;
+}
+.main-page .film-name .film-type a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 10px;
+  background-color: gray;
+  color: #fff;
+  border-radius: 15px;
+  transition: 0.5s ease;
+  opacity: 0.8;
+}
+.main-page .film-name .film-type a:hover {
+  background-color: rgb(100, 97, 97);
+  opacity: 1;
+}
+.film-detils {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: -100px;
+}
+.film-detils .watch,
+.relese,
+.time,
+.rate {
+  display: inline-block;
+  padding: 30px 50px;
+  background-color: gray;
+  color: #fff;
+  border-radius: 25px;
+  backdrop-filter: blur(8px);
+  opacity: 0.7;
+  font-size: 30px;
+  transition: 0.5 ease;
+  cursor: pointer;
+}
+.film-detils .rate span {
+  font-size: 25px;
+  opacity: 0.8;
+  position: absolute;
+  left: 12px;
+  bottom: -2px;
+  transform-origin: 0;
+  transform: rotate(-90deg);
+}
+.film-detils .relese span {
+  font-size: 25px;
+  opacity: 0.8;
+  position: absolute;
+  left: 12px;
+  bottom: -2px;
+  transform-origin: 0;
+  transform: rotate(-90deg);
+}
+.film-detils .time span {
+  font-size: 18px;
+  opacity: 0.8;
+  position: absolute;
+  left: 12px;
+  bottom: -2px;
+  transform-origin: 0;
+  transform: rotate(-90deg);
+}
+.film-detils .rate:hover {
+  background-color: rgb(65, 64, 64);
+}
+.film-detils .watch {
+  text-decoration: none;
+  background-color: green;
+  color: #fff;
+  opacity: 1;
+}
+.film-detils .relese:hover {
+  background-color: rgb(65, 64, 64);
+}
+.film-detils .time:hover {
+  background-color: rgb(65, 64, 64);
+}
+@media screen and (max-width: 700px) {
+  .main-page {
+    width: 400px;
+    height: 530px;
+  }
+  .main-page .nav {
+    justify-content: space-evenly;
+  }
+  .main-page .nav .logo a {
+    margin: 20px 10px;
+  }
+  .main-page .nav .search-box input {
+    margin: 20px 10px;
+  }
+  .main-page .film-name h1 {
+    font-size: 20px;
+  }
+  .main-page .film-name .film-type a {
+    padding: 5px;
+  }
+  .film-detils {
+    margin-top: -50px;
+  }
+  .film-detils .watch,
+  .relese,
+  .time,
+  .rate {
+    font-size: 20px;
+    padding: 20px;
+  }
+  .film-detils .rate span {
+    display: none;
+  }
+  .film-detils .relese span {
+    display: none;
+  }
+  .film-detils .time span {
+    display: none;
+  }
+}
+/* end image page */
+/* start description section */
+.page-info {
+  height: 100vh;
+  margin-top: 100px;
+}
+.page-info .description {
+  padding: 10px 70px;
+  color: #fff;
+  width: 50%;
+}
+.page-info .description h2 {
+  font-size: 19px;
+  font-weight: 500;
+  color: gray;
+}
+.page-info .description p {
+  margin-left: 25px;
+}
+@media screen and (max-width: 700px) {
+  .page-info .description {
+    width: 100%;
+  }
+}
+/* end description section */
+/* start cast section */
+.page-info .cast-film {
+  padding: 10px 70px;
+  width: 50%;
+}
+.page-info .cast-film h2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: gray;
+}
+.page-info .cast-film .img-cast {
+  display: flex;
+  justify-content: space-evenly;
+}
+.page-info .cast-film .img-cast img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.page-info .cast-film .img-cast h2 {
+  font-size: 15px;
+  color: #fff;
+  display: block;
+  margin-top: 15px;
+}
+@media screen and (max-width: 700px) {
+  .page-info .cast-film {
+    width: 100%;
+  }
+  .page-info .cast-film {
+    padding: 20px;
+  }
+  .page-info .cast-film h2 {
+    margin-bottom: 20px;
+  }
+  .page-info .cast-film .img-cast {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .page-info .cast-film .img-cast img {
+    margin: 10px;
+    width: 70px;
+    height: 70px;
+  }
+}
+/* end cast section */
+/* start recommended film section  */
+.page-info .recommend-section {
+  padding: 10px 70px;
+}
+.page-info .recommend-section h2 {
+  font-size: 25px;
+  font-weight: 500;
+  color: gray;
+}
+.page-info .recommend-section .img-film-recommend {
+  display: flex;
+  justify-content: space-evenly;
+}
+.page-info .recommend-section .img-film-recommend img {
+  width: 150px;
+  height: 200px;
+}
+.page-info .recommend-section .img-film-recommend a {
+  font-size: 15px;
+  color: #fff;
+  font-weight: 500;
+  display: block;
+  margin-top: 15px;
+  text-align: center;
+  text-decoration: none;
+}
+.page-info .recommend-section .img-film-recommend a:hover {
+  color: rgb(207, 203, 203);
+}
+@media screen and (max-width: 700px) {
+  .page-info .recommend-section .img-film-recommend {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .page-info .recommend-section h2 {
+    text-align: center;
+  }
+  .page-info .recommend-section .img-film-recommend img {
+    width: 80px;
+    height: 100px;
+    margin: 15px;
+  }
+}
+/* end recommended film section  */
+/* start trailaar section */
+.page-info .trailar-section {
+  text-align: center;
+}
+.page-info .trailar-section h2 {
+  display: block;
+  font-size: 30px;
+  font-weight: 500;
+  color: gray;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin: 15px;
+}
+.page-info .trailar-section .trailar iframe {
+  width: 800px;
+  height: 400px;
+}
+@media screen and (max-width: 700px) {
+  .page-info .trailar-section .trailar iframe {
+    width: 400px;
+  }
+}
+/* end trailaar section */
+/* start other series */
+.page-info .other-serious {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+.page-info .other-serious h2 {
+  display: block;
+  font-size: 30px;
+  font-weight: 500;
+  color: gray;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin: 15px;
+}
+.page-info .other-serious .other {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.page-info .other-serious .other div {
+  background-color: rgb(61, 60, 60);
+  box-shadow: #fff;
+  border-radius: 20px;
+  width: 200px;
+  cursor: pointer;
+  margin-bottom: 50px;
+  transition: 1s ease;
+}
+.page-info .other-serious .other div:hover {
+  transform: scale(1.01);
+  background-color: rgb(45, 42, 42);
+}
+.page-info .other-serious .other img {
+  width: 150px;
+  height: 200px;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+.page-info .other-serious a {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin: 15px;
+  text-decoration: none;
+  transition: 1s ease;
+}
+.page-info .other-serious a:hover {
+  color: blue;
+}
+@media screen and (max-width: 700px) {
+  .page-info .other-serious .other div {
+    width: 150px;
+  }
+  .page-info .other-serious .other img {
+    width: 100px;
+  }
+}
+/* end other series */
